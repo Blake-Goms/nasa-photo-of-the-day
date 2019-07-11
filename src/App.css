@@ -1,6 +1,10 @@
 .App {
-  text-align: left;
-  max-width: 600px;
+  text-align: center;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
+.Modal-Description p{
+  font-size: 1.2rem;
+  line-height: 1.8;
+}

@@ -1,10 +1,12 @@
 import axios from 'axios';
 import React, { useEffect, useState } from "react";
 import Description from './components/Description';
-import Image from './components/Image';
+import Content from './components/Content';
 import Title from './components/Title';
 import Date from './components/Date';
 import "./App.css";
+
+
 function App() {
   const [nasaData, setNasaData] = useState([]);
 
@@ -25,13 +27,12 @@ function App() {
     <div className="App">      
       <div className="images">
         <Title data={nasaData} />
-        <Description data={nasaData} />
-        <Image  data={nasaData} />
         <Date data={nasaData} />         
+        <Content  data={nasaData} />
+        {/* https://api.nasa.gov/images/apod.jpg   for when server is not working can use this direct link */}
+        <Description data={nasaData} />
       </div>
     </div>
   );
 }
-
-
 export default App;
